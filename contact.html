@@ -28,6 +28,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <!-- selectui -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+      rel="stylesheet"
+    />
     <title>Landing Page</title>
     <link rel="icon" href="./img/sociabuzz-logo-icon.png" />
   </head>
@@ -35,12 +40,7 @@
     <!-- Header Section Start -->
     <header>
       <nav
-        class="
-          navbar navbar-expand-lg navbar-expand-md navbar-light
-          bg-white
-          align-items-baseline
-          fixed-top
-        "
+        class="navbar navbar-expand-lg justify-content-center navbar-expand-md navbar-light bg-white align-items-baseline fixed-top"
       >
         <a class="navbar-brand logo logoNav" href="#"
           ><img
@@ -48,477 +48,49 @@
             alt="logo-icon"
             class="logo-nav img-fluid"
         /></a>
-        <div class="collapse navbar-collapse d-md-block" id="navbarNav">
-          <ul class="navbar-nav ml-auto d-flex align-items-center">
-            <li class="nav-item nav-login active">
-              <a class="nav-link navbar-login text-truncate text-right" href="#"
-                >Login
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link pr-0" href="#"
-                ><button class="btn btn-signup nav-signup text-truncate">
-                  Sign Up
-                </button></a
-              >
-            </li>
-          </ul>
-        </div>
-        <!-- nav mobile -->
-
-        <div class="btn-group d-lg-none d-md-none d-sm-block">
-          <nav
-            class="dropdown-toggle d-flex align-items-center"
-            data-toggle="dropdown"
-            aria-expanded="false"
-          >
-            <a href="" class="menu">Menu</a>
-          </nav>
-
-          <div class="dropdown-menu dropdown-menu-right">
-                <a class="dropdown-item">Login</a>
-                <a class="dropdown-item">Sign Up</a>
-            </div>
-          </div>
-        </div>
-        <!-- nav mobile end-->
       </nav>
     </header>
     <!-- Header Section End -->
 
     <!-- content -->
-    <main class="content">
-      <div class="jumbotron jumbotron-fluid bg-white pt-4 pb-0 mb-0 pt-xl-5">
-        <div class="container">
-          <h1 class="title-jumbotron text-center mb-0 mt-2">
-            Monetization tools ​
-          </h1>
-          <h1 class="text-center subtitle m-0">for creators​</h1>
-          <h1 class="text-center subtitle text-muted region">in Indonesia​</h1>
-          <div class="row">
-            <div class="col text-center">
-              <a href="#" class="text-decoration-none">
-                <button class="mx-auto btn-action btn">
-                  Create account​
-                </button></a
-              >
-            </div>
-          </div>
-          <div class="row mt-3 button__login">
-            <div class="col text-center">
-              <a
-                href="#"
-                class="text-decoration-none text-dark text-center login"
-              >
-                <u>Login</u>
-              </a>
-            </div>
-          </div>
-          <div class="row card-features d-flex justify-content-center">
-            <div class="col-12">
-              <h2 class="text-center d-block mt-2 text-features">
-                Multiple features to help you do more and earn more.​
-              </h2>
-            </div>
-            <div
-            class="
-              col-12
-              mb-sm-3 mb-3 mb-lg-0 mb-md-0
-              col-lg-4 col-md-4 col-sm-12
-            "
+    <main class="content mb-5 contact">
+      <div class="termofuse-content container container-custom">
+        <div class="language-container">
+          <p class="text-dark language mb-2">Language</p>
+          <select
+            class="js-example-placeholder-single js-states form-control"
+            id="selectfirst"
           >
-            <div class="card hover__grow card-tribe">
-              <a href="#section-tribe" class="text-decoration-none card-hero">
-                <div class="card-body">
-                  <div class="card-title">
-                    <img
-                      src="./img/feature-tribe-small.png"
-                      alt=""
-                      class="img-fluid"
-                    />
-                  </div>
+            <option></option>
+            <option>English</option>
 
-                  <h3 class="card-text">Get support from your community​</h3>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div
-            class="
-              col-12
-              mb-sm-3 mb-3 mb-lg-0 mb-md-0
-              col-lg-4 col-md-4 col-sm-12
-            "
-          >
-            <div class="card hover__grow card-shop">
-              <a href="#section-shop" class="text-decoration-none card-hero">
-                <div class="card-body">
-                  <div class="card-title">
-                    <img
-                      src="./img/feature-shop-small.png"
-                      alt=""
-                      class="img-fluid"
-                    />
-                  </div>
+            <option>Indonesia</option>
 
-                  <h3 class="card-text">Sell digital products​​</h3>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-12 mb-lg-0 mb-md-0 col-lg-4 col-md-4 col-sm-12">
-            <div class="card hover__grow card-linkbio">
-              <a
-                href="#section-linkbio"
-                class="text-decoration-none card-hero"
-              >
-                <div class="card-body">
-                  <div class="card-title">
-                    <img
-                      src="./img/feature-linkbio-small.png"
-                      alt=""
-                      class="img-fluid"
-                    />
-                  </div>
+            <option>China</option>
+            <option>Russia</option>
+          </select>
+        </div>
+        <div class="title mt-4 mb-4">
+          <h1 class="text-dark">Privacy Policy​</h1>
+        </div>
+        <div class="content-text">
+          <p class="mb-0">
+            Email :
+            <a href="mailto:support@sociabuzz.com">support@sociabuzz.com​</a>
+          </p>
+          <p class="mb-3">
+            Whatsapp: <a href="tel:6288212779733​"> +6288212779733​</a>
+          </p>
+          <p class="mb-0 title-list">COMPANY INFORMATION</p>
 
-                  <h3 class="card-text">One page for all your links​</h3>
-                </div>
-              </a>
-            </div>
-          </div>
-          </div>
-     
+          <p class="mb-0">Legal Name: PT Komunika Lintas Maya</p>
+          <p class="mb-0">
+            Registered Address: Epiwalk 5th Floor 540A, Jl. HR. Rasuna Said,
+            Jakarta, Indonesia 12940
+          </p>
+          <p class="mb-0">Business Registration Number: 9120008622154</p>
         </div>
       </div>
-
-      <section class="content-tribe" id="section-tribe">
-        <div class="container">
-          <div class="img-tribe">
-            <img
-              src="./img/feature-tribe-small.png"
-              alt="tribe"
-              class="img-fluid mx-auto d-block"
-            />
-            <h3 class="text-center title-tribe">
-              Get support from your community​
-            </h3>
-          </div>
-          <div class="row d-flex justify-content-center">
-            <div class="col-12  mb-lg-2 col-lg-4 col-md-4 col-sm-12">
-              <figure class="figure image mb-lg-4 mb-md-4 mb-5">
-                <div class="figure-image">
-                  <img
-                  src="./img/sociabuzz-tribe-get-support-from-your-community-1.png"
-                  class="figure-img img-fluid rounded mx-auto d-block"
-                  alt="donation"
-                />
-                </div>
-               
-                <h4 class="figure-caption figure-title mt-3 text-center">
-                  Receive support/donation​
-                </h4>
-                <h5 class="text-center description-figure">
-                  Create a page in minutes. Share it to your community. Start
-                  receiving support/donation.​
-                </h5>
-              </figure>
-            </div>
-            <div class="col-12  mb-lg-2 col-lg-4 col-md-4 col-sm-12">
-              <figure class="figure image mb-lg-4 mb-md-4 mb-5">
-                <div class="figure-image">
-                  <img
-                  src="./img/sociabuzz-tribe-get-support-from-your-community-2.png"
-                  class="figure-img img-fluid rounded mx-auto d-block"
-                  alt=""
-                />                </div>
-              
-                <h4 class="figure-caption figure-title mt-3 text-center">
-                  Live streaming overlays​
-                </h4>
-                <h5 class="text-center description-figure">
-                  Various overlays that can be used to make receiving support
-                  while live streaming becomes more exciting.​​
-                </h5>
-              </figure>
-            </div>
-            <div class="col-12  mb-lg-2 col-lg-4 col-md-4 col-sm-12">
-              <figure class="figure image mb-lg-4 mb-md-4 mb-4 mb-60">
-                <div class="figure-image">
-                  <img
-                  src="./img/sociabuzz-tribe-get-support-from-your-community-3.png"
-                  class="figure-img img-fluid rounded mx-auto d-block"
-                  alt="donation"
-                />                </div>
-
-               
-                <h4 class="figure-caption figure-title mt-3 text-center">
-                  Create exclusive contents​
-                </h4>
-                <h5 class="text-center description-figure">
-                  Create exclusive contents which can only be accessed according
-                  to the price you have set.​
-                </h5>
-              </figure>
-            </div>
-            <div
-              class="tribe__clicktoaction mx-auto d- col-12 d-block text-center"
-            >
-            <div class="col-12 ">
-
-              <a href="#" class="text-decoration-none">
-                <button class="btn-action__tribe btn ">
-                  Create Page
-                </button></a
-              >                     </div>
-              <div class="col-12 mt-3">
-
-              <a
-                href="#"
-                class="
-                  text-decoration-none text-dark text-center
-                  mt-3
-                  guide guide-tribe
-                "
-              >
-                <u>Guide & FAQ​ </u>
-              </a>            </div>
-
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="content-shop" id="section-shop">
-        <div class="container">
-          <div class="img-shop">
-            <img
-              src="./img/feature-shop-small.png"
-              alt="shop"
-              class="img-fluid mx-auto d-block"
-            />
-            <h3 class="text-center title-shop">Sell digital products​</h3>
-          </div>
-          <div class="row d-flex justify-content-center justify-content-lg-center justify-content-md-center">
-            <div class="col-12  mb-lg-2 col-lg-4 col-md-4 col-sm-12">
-              <figure class="figure image mb-lg-4 mb-md-4 mb-5">
-                <div class="figure-image">   <img
-                  src="./img/sociabuzz-shop-sell-digital-products-1.png"
-                  class="figure-img img-fluid rounded mx-auto d-block"
-                  alt="donation"
-                />
-                </div>
-             
-                <h4 class="figure-caption figure-title mt-3 text-center">
-                  Sell easily​
-                </h4>
-                <h5 class="text-center description-figure">
-                  Sell anything in the form of files or links. Buyers can
-                  instantly access it after paying.​
-                </h5>
-              </figure>
-            </div>
-            <div class="col-12  mb-lg-2 col-lg-4 col-md-4 col-sm-12">
-              <figure class="figure image mb-lg-4 mb-md-4 mb-4 mb-60">
-                <div class="figure-image">      <img
-                  src="./img/sociabuzz-shop-sell-digital-products-2.png"
-                  class="figure-img img-fluid rounded mx-auto d-block"
-                  alt="donation"
-                />
-                </div>
-          
-                <h4 class="figure-caption figure-title mt-3 text-center">
-                  Any files or links​
-                </h4>
-                <h5 class="text-center description-figure">
-                  Upload files of any format for buyers to download, or links to
-                  access them.​
-                </h5>
-              </figure>
-            </div>
-            <div class="shop__clicktoaction mx-auto d-block col-12 text-center">
-              <div class="col-12 ">
-
-              <a href="#" class="text-decoration-none">
-                <button class="btn-action__shop btn">
-                  Create Page
-                </button></a
-              >                      </div>
-              <div class="col-12 mt-3">
-
-              <a
-                href="#"
-                class="
-                  text-decoration-none text-dark text-center
-                  mt-3
-                  guide guide-shop
-                lkeren abis yessir
-                  "
-              >
-                <u>Guide & FAQ​ </u>
-              </a>            </div>
-
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="content-linkbio" id="section-linkbio">
-        <div class="container">
-          <div class="img-linkbio">
-            <img
-              src="./img/feature-linkbio-small.png"
-              alt="linkbio"
-              class="img-fluid mx-auto d-block"
-            />
-            <h3 class="text-center title-linkbio">
-              One page for all your links​
-            </h3>
-          </div>
-          <div class="row d-flex justify-content-center">
-            <div class="col-12  mb-lg-2 col-lg-4 col-md-4 col-sm-12">
-              <figure class="figure image mb-lg-4 mb-md-4 mb-5">
-                <div class="figure-image"><img
-                  src="./img/sociabuzz-linkbio-one-page-for-all-your-links-1.png"
-                  class="figure-img img-fluid rounded mx-auto d-block"
-                  alt="donation"
-                />
-                </div>
-                
-                <h4 class="figure-caption figure-title mt-3 text-center">
-                  Add Links
-                </h4>
-                <h5 class="text-center description-figure">
-                  Create a page in minutes to display all your links.​
-                </h5>
-              </figure>
-            </div>
-            <div class="col-12  mb-lg-2 col-lg-4 col-md-4 col-sm-12">
-              <figure class="figure image mb-lg-4 mb-md-4 mb-5">
-                <div class="figure-image"> <img
-                  src="./img/sociabuzz-linkbio-one-page-for-all-your-links-2.png"
-                  class="figure-img img-fluid rounded mx-auto d-block"
-                  alt="donation"
-                />
-                </div>
-               
-                <h4 class="figure-caption figure-title mt-3 text-center">
-                  ​Customize style​
-                </h4>
-                <h5 class="text-center description-figure">
-                  Customize the look, color and font based on your preference.
-                  For free.​
-                </h5>
-              </figure>
-            </div>
-            <div class="col-12  mb-lg-2 col-lg-4 col-md-4 col-sm-12">
-              <figure class="figure image mb-lg-4 mb-md-4 mb-4 mb-60">
-                <div class="figure-image">
-                 <img
-                  src="./img/sociabuzz-linkbio-one-page-for-all-your-links-3.png"
-                  class="figure-img img-fluid rounded mx-auto d-block"
-                  alt="donation"
-                />
-                </div>
-                <h4 class="figure-caption figure-title mt-3 text-center">
-                  Media & monetization​
-                </h4>
-                <h5 class="text-center description-figure">
-                  Show media and our monetization features directly on the page
-                  without sending visitors to another page.​
-                </h5>
-              </figure>
-            </div>
-            <div
-              class="linkbio__clicktoaction mx-auto d-block col-12 text-center"
-            >              <div class="col-12 ">
-
-              <a href="#" class="text-decoration-none">
-                <button class="btn-action__linkbio btn ">
-                  Create Page
-                </button></a
-              >                       </div>
-              <div class="col-12 mt-3">
-
-              <a
-                href="#"
-                class="
-                  text-decoration-none text-dark text-center
-                
-                  mt-3
-                  guide guide-linkbio
-                "
-              >
-                <u>Guide & FAQ​ </u>
-              </a>          </div>
-
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="content-payment">
-        <div class="container">
-          <h4 class="img-payment text-center title-payment mb-20">
-            Supporters & customers can transact safely and easily​
-          </h4>
-          <div class="row">
-            <div class="col-12">
-              <figure class="figure payment mx-auto d-block">
-                <img
-                  src="./img/Full_Online_Tray_RGB.png"
-                  class="img-fluid rounded mx-auto d-block"
-                  alt="donation"
-                />
-              </figure>
-            </div>
-            <div class="img-payment col-12 mt-50">
-              <h4 class="text-center title-payment mb-20">
-                Withdraw earnings to your PayPal​
-              </h4>
-            </div>
-            <div class="col-12">
-              <figure class="figure payment mx-auto d-block mb-0">
-                <img
-                  src="./img/withdrawal-money.png"
-                  class="img-fluid rounded mx-auto d-block withdraw"
-                  alt="donation"
-                />
-                <div class="payment-paypal mx-auto">
-                  <img
-                    src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-200px.png"
-                    class="img-fluid rounded mx-auto d-block withdraw"
-                    alt="donation"
-                  />
-                </div>
-              </figure>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="content-login__action">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div
-              class="login__clicktoaction mx-auto d-block col-12 text-center"
-            >
-            <div class="col-12">
-              <a href="#" class="text-decoration-none">
-                <button class="btn-action__login btn mt-2">
-                  Create Account
-                </button></a
-              ></div>            <div class="col-12 mt-3">
-
-              <a
-                href="#"
-                class="
-                  text-decoration-none text-dark text-center
-                  mt-3
-                  login-footer
-                "
-              >
-                <u>Login</u>
-              </a></div>      
-            </div>
-          </div>
-        </div>
-      </section>
     </main>
     <!-- end content -->
 
@@ -530,29 +102,29 @@
         </div>
         <div class="text-footer">
           <div class="col-12 mb-2">
-          <a href="#" >Contact Us​</a>
-        </div>
-        <div class="col-12 mb-2">
-          <a href="#" >Guide & FAQ</a>
-        </div>
+            <a href="#">Contact Us​</a>
+          </div>
           <div class="col-12 mb-2">
-          <a href="#" >Login for Supporters</a>
-        </div>
+            <a href="#">Guide & FAQ</a>
+          </div>
           <div class="col-12 mb-2">
-          <a href="#" >Login for Buyers​</a>
-        </div>
+            <a href="#">Login for Supporters</a>
+          </div>
           <div class="col-12 mb-2">
-          <a href="#" >Terms of Use</a>
-        </div>
+            <a href="#">Login for Buyers​</a>
+          </div>
           <div class="col-12 mb-2">
-          <a href="#" >Privacy Policy​</a>
-        </div>
+            <a href="#">Terms of Use</a>
+          </div>
           <div class="col-12 mb-2">
-          <a href="#" >Language​</a>
-        </div>
+            <a href="#">Privacy Policy​</a>
+          </div>
+          <div class="col-12 mb-2">
+            <a href="#">Language​</a>
+          </div>
           <div class="col-12">
-          <p class="sociabuzz mb-0 pb-0">​ © SociaBuzz</p>
-        </div>
+            <p class="sociabuzz mb-0 pb-0">​ © SociaBuzz</p>
+          </div>
         </div>
       </div>
     </footer>
@@ -571,8 +143,9 @@
       integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script src="./script.js"></script>
-
+    <!-- select -->
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
