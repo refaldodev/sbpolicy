@@ -239,7 +239,7 @@ nav.dropdown-toggle .menu {
 }
 .title h1 {
   font-weight: 900 !important;
-  font-size: 2rem !important;
+  font-size: 1.6rem !important;
 }
 .title-text {
   font-size: 1.3rem;
@@ -322,6 +322,10 @@ footer .text-footer a {
   }
   .contact {
     min-height: 100vh !important;
+  }
+  .title h1 {
+    font-weight: 900 !important;
+    font-size: 2rem !important;
   }
 }
 
