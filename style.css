@@ -8,6 +8,9 @@ html {
   font-family: "Open Sans", sans-serif;
   line-height: 1.5;
 }
+.color-anchor {
+  color: #0877ee !important;
+}
 ul.content-wrapper,
 menu,
 dir {
@@ -243,7 +246,14 @@ nav.dropdown-toggle .menu {
 }
 .title-text {
   font-size: 1.3rem;
+  color: #000 !important;
   font-weight: 700;
+}
+p,
+span,
+ul,
+li {
+  color: #000 !important;
 }
 .content-text {
   font-size: 1rem !important;
